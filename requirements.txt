@@ -1,0 +1,11 @@
+--extra-index-url https://download.pytorch.org/whl/cu113
+torch
+numpy
+pyannote.audio
+wavio
+gradio
+python-dotenv
+typing-extensions
+pytorch-lightning
+torchmetrics
+spaces
