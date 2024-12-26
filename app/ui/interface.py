@@ -28,7 +28,7 @@ def process_audio_file(audio: str, num_speakers: int, min_speakers: int, max_spe
         
         labels_path = audio_processor.generate_labels(result)
         
-        return (result["diarization_text"], None, result["statistics"])
+        return (result["diarization_text"], labels_path, result["statistics"])
     except Exception as e:
         logger.error(f"Error in process_audio_file: {e}")
         return f"Error processing audio: {str(e)}", None, {}
